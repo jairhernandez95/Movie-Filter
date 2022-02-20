@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="dataMovies.json"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <title>Movie Filter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="titleDiv">
+            <h1>Movie Filter</h1>
+        </div>
+        <div class="searchAndFilterDiv">
+            <div class="filterDiv" id="filterDiv">
+                <h4>Filter by</h4>
+                <select id="categoriesSelect" name="categoriesSelect">
+                </select>
+            </div>
+            <h4>or</h4>
+            <div class="searchDiv" id="searchDiv">
+                <input type="text" placeholder="Type some movie...">
+                <button>Search</button>
+            </div>
+        </div>
+        <div class="loadingDiv" id="loadingDiv"></div>
+        <div class="allDataDiv" id="allDataDiv"></div>
+        <div class="resultDiv" id="resultDiv"></div>
+    </main>
+    <footer></footer>
+</body>
+</html>

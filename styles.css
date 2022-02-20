@@ -1,0 +1,32 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+.titleDiv{
+    display: flex;
+    justify-content: center;
+}
+.searchAndFilterDiv{
+    display: grid;
+    grid-template-columns: 30% 5% 30%;
+    justify-content: center;
+}
+.filterDiv{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 5%;
+    justify-content: center;
+}
+.filterDiv > h4{
+    text-align: end;
+}
+.searchAndFilterDiv > h4{
+    display: flex;
+    justify-content: center;
+}
+.searchDiv{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 5%;
+    justify-content: center;
+}
