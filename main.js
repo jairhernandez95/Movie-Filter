@@ -14,6 +14,8 @@ function showAllData(array)
         individualDataDiv.setAttribute("id", "individualDataDiv");
         individualDataDiv.setAttribute("class", "individualDataDiv");
         individualDataDiv.setAttribute("id", `${j}`);
+        let movieImage = document.createElement("div");
+        movieImage.innerHTML = `<img src="${array[0].movies[j].posterUrl}">`
         let movieTitle = document.createElement("div");
         movieTitle.innerHTML = `<h5>Title: ${array[0].movies[j].title}</h5>`;
         let movieGenres = document.createElement("div");
@@ -27,6 +29,7 @@ function showAllData(array)
         individualDataDiv.insertAdjacentElement("afterbegin", movieYear);
         individualDataDiv.insertAdjacentElement("afterbegin", movieGenres);
         individualDataDiv.insertAdjacentElement("afterbegin", movieTitle);
+        individualDataDiv.insertAdjacentElement("afterbegin", movieImage);
     }
 }
 
