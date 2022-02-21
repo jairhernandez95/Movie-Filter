@@ -43,8 +43,3 @@
     padding: 5px;
     text-overflow: clip;
 }
-
-.individualDataDiv > img
-{
-    object-fit: contain;
-}
