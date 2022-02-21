@@ -30,3 +30,16 @@
     column-gap: 5%;
     justify-content: center;
 }
+.allDataDiv
+{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: center;
+}
+.allDataDiv > div
+{
+    outline: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    text-overflow: clip;
+}

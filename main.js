@@ -7,7 +7,27 @@ fetch("dataMovies.json")
 
 function showAllData(array)
 {
-    console.log(array[0].genres);
+    let allDataDiv = document.getElementById("allDataDiv");
+    for(let j = array[0].movies.length-1; j >= 0; j--)
+    {
+        let individualDataDiv = document.createElement("div");
+        individualDataDiv.setAttribute("id", "individualDataDiv");
+        individualDataDiv.setAttribute("class", "individualDataDiv");
+        individualDataDiv.setAttribute("id", `${j}`);
+        let movieTitle = document.createElement("div");
+        movieTitle.innerHTML = `<h5>Title: ${array[0].movies[j].title}</h5>`;
+        let movieGenres = document.createElement("div");
+        movieGenres.innerHTML = `<h5>Genres: ${array[0].movies[j].genres}</h5>`;
+        let movieYear = document.createElement("div");
+        movieYear.innerHTML = `<h5>Year: ${array[0].movies[j].year}</h5>`;
+        let movieRuntime = document.createElement("div");
+        movieRuntime.innerHTML = `<h5>Runtime: ${array[0].movies[j].runtime} minutes</h5>`;
+        allDataDiv.insertAdjacentElement("afterbegin",individualDataDiv);
+        individualDataDiv.insertAdjacentElement("afterbegin", movieRuntime);
+        individualDataDiv.insertAdjacentElement("afterbegin", movieYear);
+        individualDataDiv.insertAdjacentElement("afterbegin", movieGenres);
+        individualDataDiv.insertAdjacentElement("afterbegin", movieTitle);
+    }
 }
 
 function showGenres(array)
@@ -26,5 +46,5 @@ function showGenres(array)
 function showDataFiltered(array)
 {
     // Falta mostrar la info de la categoría filtrada
-    console.log(array);
+    // console.log(array);
 }
