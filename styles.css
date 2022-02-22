@@ -2,20 +2,18 @@
     font-family: 'Roboto Mono', monospace;
     margin: 0;
 }
-
 body
 {
     display: block;
 }
-
 header
 {
     position: fixed;
     width: 100%;
     background-color: white;
 }
-
-.titleDiv{
+.titleDiv
+{
     display: flex;
     justify-content: center;
 }
@@ -23,6 +21,7 @@ header
     display: grid;
     grid-template-columns: 30% 5% 30%;
     justify-content: center;
+    margin-bottom: 5px;
 }
 .filterDiv{
     display: grid;
@@ -43,6 +42,10 @@ header
     column-gap: 5%;
     justify-content: center;
 }
+main
+{
+    padding-top: 70px;
+}
 .allDataDiv
 {
     display: grid;
@@ -56,7 +59,6 @@ header
     padding: 5px;
     text-overflow: clip;
 }
-
 img
 {
     width: 100%;
