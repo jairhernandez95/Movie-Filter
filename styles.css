@@ -2,6 +2,19 @@
     font-family: 'Roboto Mono', monospace;
     margin: 0;
 }
+
+body
+{
+    display: block;
+}
+
+header
+{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
 .titleDiv{
     display: flex;
     justify-content: center;
