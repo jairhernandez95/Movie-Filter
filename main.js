@@ -15,7 +15,7 @@ function showAllData(array)
         individualDataDiv.setAttribute("class", "individualDataDiv");
         individualDataDiv.setAttribute("id", `${j}`);
         let movieImage = document.createElement("div");
-        movieImage.innerHTML = `<img src="${array[0].movies[j].posterUrl}">`
+        movieImage.innerHTML = `<img src="${array[0].movies[j].posterUrl}" onerror="this.onerror=null;this.src='errorLoad.png';">`
         let movieTitle = document.createElement("div");
         movieTitle.innerHTML = `<h5>Title: ${array[0].movies[j].title}</h5>`;
         let movieGenres = document.createElement("div");
