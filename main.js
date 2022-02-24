@@ -44,10 +44,9 @@ function showGenres(array)
         option.text = genre;
         categoriesSelect.appendChild(option);
     }
-    showDataFiltered(array)
 }
-function showDataFiltered(array)
+function showDataFiltered(data)
 {
-    // Falta mostrar la info de la categoría filtrada
-    // console.log(array);
+    let option = document.getElementById("categoriesSelect").value;
+    console.log(option);
 }
