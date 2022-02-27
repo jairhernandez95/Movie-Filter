@@ -112,4 +112,53 @@ function showFilteredData(array)
         }
     }
 }
+function searchMovie(array)
+{
+    let movieToSearch = document.getElementById("movieToSearch").value;
+    console.log(movieToSearch);
+    let auxiliarArray = [];
+    for(let l = 0; l < array[0][0].movies.length; l++)
+    {
+        if(array[0][0].movies[l].title.includes(movieToSearch))
+        {
+            auxiliarArray.push(array[0][0].movies[l]);
+        }
+        else
+        {
+            continue;
+        }
+    }
+    showFoundMovies(auxiliarArray);
+}
+function showFoundMovies(array)
+{
+    console.log(array);
+    let resultDiv = document.getElementById("resultDiv");
+    let allDataDiv = document.getElementById("allDataDiv");
+    allDataDiv.innerHTML = ``;
+    resultDiv.innerHTML = ``;
+    for(let m = 0; array.length; m++)
+    {
+        let individualDataDiv = document.createElement("div");
+            individualDataDiv.setAttribute("id", "individualDataDiv");
+            individualDataDiv.setAttribute("class", "individualDataDiv");
+            individualDataDiv.setAttribute("id", `${m}`);
+            let movieImage = document.createElement("div");
+            movieImage.innerHTML = `<img src="${array[m].posterUrl}" onerror="this.onerror=null;this.src='errorLoad.png';">`
+            let movieTitle = document.createElement("div");
+            movieTitle.innerHTML = `<h5>Title: ${array[m].title}</h5>`;
+            let movieGenres = document.createElement("div");
+            movieGenres.innerHTML = `<h5>Genres: ${array[m].genres}</h5>`;
+            let movieYear = document.createElement("div");
+            movieYear.innerHTML = `<h5>Year: ${array[m].year}</h5>`;
+            let movieRuntime = document.createElement("div");
+            movieRuntime.innerHTML = `<h5>Runtime: ${array[m].runtime} minutes</h5>`;
+            resultDiv.insertAdjacentElement("afterbegin",individualDataDiv);
+            individualDataDiv.insertAdjacentElement("afterbegin", movieRuntime);
+            individualDataDiv.insertAdjacentElement("afterbegin", movieYear);
+            individualDataDiv.insertAdjacentElement("afterbegin", movieGenres);
+            individualDataDiv.insertAdjacentElement("afterbegin", movieTitle);
+            individualDataDiv.insertAdjacentElement("afterbegin", movieImage);
+    }
+}
 getData();
