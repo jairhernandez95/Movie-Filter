@@ -29,8 +29,8 @@ function showAllData(array)
         movieImage.innerHTML = `<img src="${array[0].movies[j].posterUrl}" onerror="this.onerror=null;this.src='errorLoad.png';">`
         let movieTitle = document.createElement("div");
         movieTitle.innerHTML = `<h5>Title: ${array[0].movies[j].title}</h5>`;
-        let movieGenres = document.createElement("div");
-        movieGenres.innerHTML = `<h5>Genres: ${array[0].movies[j].genres}</h5>`;
+        // let movieGenres = document.createElement("div");
+        // movieGenres.innerHTML = `<h5>Genres: ${array[0].movies[j].genres}</h5>`;
         let movieYear = document.createElement("div");
         movieYear.innerHTML = `<h5>Year: ${array[0].movies[j].year}</h5>`;
         let movieRuntime = document.createElement("div");
@@ -38,7 +38,7 @@ function showAllData(array)
         allDataDiv.insertAdjacentElement("afterbegin",individualDataDiv);
         individualDataDiv.insertAdjacentElement("afterbegin", movieRuntime);
         individualDataDiv.insertAdjacentElement("afterbegin", movieYear);
-        individualDataDiv.insertAdjacentElement("afterbegin", movieGenres);
+        // individualDataDiv.insertAdjacentElement("afterbegin", movieGenres);
         individualDataDiv.insertAdjacentElement("afterbegin", movieTitle);
         individualDataDiv.insertAdjacentElement("afterbegin", movieImage);
     }
@@ -95,8 +95,8 @@ function showFilteredData(array)
             movieImage.innerHTML = `<img src="${array[j].posterUrl}" onerror="this.onerror=null;this.src='errorLoad.png';">`
             let movieTitle = document.createElement("div");
             movieTitle.innerHTML = `<h5>Title: ${array[j].title}</h5>`;
-            let movieGenres = document.createElement("div");
-            movieGenres.innerHTML = `<h5>Genres: ${array[j].genres}</h5>`;
+            // let movieGenres = document.createElement("div");
+            // movieGenres.innerHTML = `<h5>Genres: ${array[j].genres}</h5>`;
             let movieYear = document.createElement("div");
             movieYear.innerHTML = `<h5>Year: ${array[j].year}</h5>`;
             let movieRuntime = document.createElement("div");
@@ -104,7 +104,7 @@ function showFilteredData(array)
             resultDiv.insertAdjacentElement("afterbegin",individualDataDiv);
             individualDataDiv.insertAdjacentElement("afterbegin", movieRuntime);
             individualDataDiv.insertAdjacentElement("afterbegin", movieYear);
-            individualDataDiv.insertAdjacentElement("afterbegin", movieGenres);
+            // individualDataDiv.insertAdjacentElement("afterbegin", movieGenres);
             individualDataDiv.insertAdjacentElement("afterbegin", movieTitle);
             individualDataDiv.insertAdjacentElement("afterbegin", movieImage);
         }
@@ -143,8 +143,8 @@ function showFoundMovies(array)
             movieImage.innerHTML = `<img src="${array[m].posterUrl}" onerror="this.onerror=null;this.src='errorLoad.png';">`
             let movieTitle = document.createElement("div");
             movieTitle.innerHTML = `<h5>Title: ${array[m].title}</h5>`;
-            let movieGenres = document.createElement("div");
-            movieGenres.innerHTML = `<h5>Genres: ${array[m].genres}</h5>`;
+            // let movieGenres = document.createElement("div");
+            // movieGenres.innerHTML = `<h5>Genres: ${array[m].genres}</h5>`;
             let movieYear = document.createElement("div");
             movieYear.innerHTML = `<h5>Year: ${array[m].year}</h5>`;
             let movieRuntime = document.createElement("div");
@@ -152,7 +152,7 @@ function showFoundMovies(array)
             resultDiv.insertAdjacentElement("afterbegin",individualDataDiv);
             individualDataDiv.insertAdjacentElement("afterbegin", movieRuntime);
             individualDataDiv.insertAdjacentElement("afterbegin", movieYear);
-            individualDataDiv.insertAdjacentElement("afterbegin", movieGenres);
+            // individualDataDiv.insertAdjacentElement("afterbegin", movieGenres);
             individualDataDiv.insertAdjacentElement("afterbegin", movieTitle);
             individualDataDiv.insertAdjacentElement("afterbegin", movieImage);
     }
