@@ -79,8 +79,6 @@ function showFilteredData(array)
     let allDataDiv = document.getElementById("allDataDiv");
     allDataDiv.innerHTML = ``;
     resultDiv.innerHTML = ``;
-    console.log(array);
-    console.log(option);
     if(option == "None")
     {
         getData();
@@ -115,7 +113,6 @@ function showFilteredData(array)
 function searchMovie(array)
 {
     let movieToSearch = document.getElementById("movieToSearch").value;
-    console.log(movieToSearch);
     let auxiliarArray = [];
     for(let l = 0; l < array[0][0].movies.length; l++)
     {
@@ -132,7 +129,6 @@ function searchMovie(array)
 }
 function showFoundMovies(array)
 {
-    console.log(array);
     let resultDiv = document.getElementById("resultDiv");
     let allDataDiv = document.getElementById("allDataDiv");
     allDataDiv.innerHTML = ``;
