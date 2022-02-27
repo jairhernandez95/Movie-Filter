@@ -62,6 +62,7 @@ main{
     text-overflow: clip;
     border-radius: 5px;
     cursor: pointer;
+    overflow: hidden;
 }
 .allDataDiv > div:hover{
     background-color: yellow;
@@ -83,6 +84,7 @@ img{
     text-overflow: clip;
     border-radius: 5px;
     cursor: pointer;
+    overflow: hidden;
 }
 .resultDiv > div:hover{
     background-color: yellow;
