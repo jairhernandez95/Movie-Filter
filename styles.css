@@ -40,7 +40,7 @@ header{
 }
 .searchDiv{
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 80%;
     column-gap: 5%;
     justify-content: center;
 }
